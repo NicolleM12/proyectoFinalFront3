@@ -1,3 +1,6 @@
+*{
+  max-width: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,23 +14,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.favButton{
-  background-color: rgba(136, 136, 136, 0.116);
-  padding: 10px;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-}
 
 h1{
   text-align: center;
+  width: 100%;
 }
 
-nav{
-  display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+p{
+  text-align: center;
+  width: 150rem;
 }
 
 a{
@@ -38,29 +33,85 @@ a{
 }
 a:hover{
   color: rgb(136, 136, 136);
-} 
+}
 
-footer {
+/* NAVBAR ESTILOS*/
+
+nav{
   display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem;
-  position: relative;
-  bottom: 0;
-  width: 90%;
-  height: 40px;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.btnStyle{
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbarBrand {
+  font-size: 30px;
+}
+
+.navbarBrand::first-letter {
+  color: #45ebe6;
+}
+
+.navBarLink {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+}
+
+/* TERMINAN LOS ESTILOS DEL NAVBAR*/
+
+/* ESTILOS DE FOOTER*/
+
+.footerWrapper {
+  margin-top: auto;
+}
+
+.footer {
+  padding: 2rem 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 1rem;
+  filter: brightness(0);
+}
+
+.dhLogo{
+  max-width: 50%;
+}
+
+.top {
+  text-transform: uppercase;
+  padding: 1rem;
+  background: rgb(52, 196, 194);
+  border: none;
+  color: white;
   margin-top: 2rem;
+  width: 100%;
 }
 
-footer > img{
-  width: 200px;
-  margin: 0;
-}
-footer > p{
-  margin: 0;
-  padding-top: 0.7rem;
+.iconsDark{
+  filter: brightness(0) invert(1);
 }
 
+.icon {
+  max-width: 2rem;
+  height: auto;
+}
+
+/* TERMINAN LOS ESTILOS DEL FOOTER*/
+
+/* ESTILOS DE CONTACT*/
 form{
   display: flex;
   flex-direction: column;
@@ -69,6 +120,30 @@ form{
   height: 100px;
   margin: 0 auto;
 }
+
+.CardBody1{
+  width: 200rem;
+}
+
+.cajita{
+  width: 500px;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 35%;
+}
+
+.inputSpacing+.inputSpacing{
+  margin: 1rem 0;
+}
+
+/* TERMINAN LOS ESTILOS DEL CONTACT*/
+
+/* DEL Y PARA CARD / DETAIL CARD */
 
 .card{
   display: flex;
@@ -80,10 +155,6 @@ form{
   border: 0.5px solid rgb(136, 136, 136);
 }
 
-.card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
-}
-
 .card-grid{
   display: flex;
   justify-content: space-evenly;
@@ -93,6 +164,32 @@ form{
   flex-wrap: wrap;
   margin: 0 auto;
 }
+
+.favButton{
+  background-color: rgba(136, 136, 136, 0.116);
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.card:hover{
+  border: 0.5px solid rgb(206, 217, 142);
+}
+
+.CardBody{
+  width: 100%;
+}
+
+.title{
+  height: 2rem;
+}
+
+.cardDark{
+  background-color: #31313196;
+}
+
+/* TERMINAN LOS ESTILOS DEL CARD */
 
 table {
  border-collapse: collapse;
